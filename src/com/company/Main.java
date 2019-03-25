@@ -7,3 +7,5 @@ public class Main {
 	    Triangle t1 = new Triangle();
     }
 }
+
+
