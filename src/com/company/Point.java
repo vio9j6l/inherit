@@ -3,7 +3,6 @@ package com.company;
 public class Point {
     private double x;
     private double y;
-    private double z;
 
     public Point(double _x, double _y) {
         this.x= _x;
