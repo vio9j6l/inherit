@@ -1,22 +1,53 @@
 package com.company;
+import java.util.ArrayList;
 
 public class Shape {
+    //Points - Circle/Rectangle
+    Point p1 = new Point(1,4);
+    Point p2 = new Point(1, 0);
+    Point p3 = new Point(4, 4);
+    Point p4 = new Point(4, 1);
 
-    public Point p1;
-    public Point p2;
-    public Point p3;
-    public Point p4;
+    //Points - Triangle
+    Point po1 = new Point(1,1);
+    Point po2 = new Point(4,1);
+    Point po3 = new Point(2,6);
+
+    private ArrayList<Point> points = new ArrayList<Point>();
+
+    public Shape() { }
+
+    public Shape(Point point, Point point1, Point point2) {
+        points.add(point);
+        points.add(point1);
+
+    }
 
 
-    public Point getp1() { return this.p1;}
-    public void setp1(Point _p1) { this.p1 = _p1; }
+    public Shape(ArrayList<Point> _points){ points = _points; }
 
-    public Point getp2() { return this.p2;}
-    public void setp2(Point _p2) { this.p2 = _p2; }
+    public Shape(Point point) {
+        points.add(point);
+    }
 
-    public Point getp3() { return this.p3;}
-    public void setp3(Point _p3) { this.p3 = _p3; }
+    public void addPointsList(ArrayList<Point> _points) {
+        points = _points;
+    }
 
-    public Point getp4() { return this.p4;}
-    public void setp4(Point _p4) { this.p4 = _p4; }
+    public void addPoints(Point point) {
+        points.add(point);
+    }
+
+    public Point getPoint(int index) {
+        return points.get(index);
+    }
+
+    public int getPointX(int index) {
+        return points.get(index).getX();
+    }
+
+    public int getPointY(int index) {
+        return points.get(index).getY();
+    }
+
 }

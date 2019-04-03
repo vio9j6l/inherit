@@ -1,18 +1,18 @@
 package com.company;
 
 public class Point {
-    private double x;
-    private double y;
+    private int x;
+    private int y;
 
-    public Point(double _x, double _y) {
+    public Point(int _x, int _y) {
         this.x= _x;
         this.y = _y;
     }
 
-    public Double getX() {return x;}
-    public void setX(double _x) {this.x = _x;}
+    public int getX() {return x;}
+    public void setX(int _x) {this.x = _x;}
 
-    public double getY() {return y;}
-    public void setY(double _y) {this.y = _y;}
+    public int getY() {return y;}
+    public void setY(int _y) {this.y = _y;}
 
 }

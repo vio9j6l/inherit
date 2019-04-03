@@ -2,18 +2,19 @@ package com.company;
 
 public class Rectangle extends Shape {
     public Rectangle() {
-        p1 = new Point(1,4);
-        System.out.println("Rectangle UpperLeft Point: X: " + p1.getX() + " Y: " + p1.getY());
-        p2 = new Point(1, 0);
-        System.out.println("Rectangle BottomLeft Point: X:" + p2.getX() + " Y: " + p2.getY());
-        p3 = new Point(4, 4);
-        System.out.println("Rectangle UpperRight Point: X: " + p3.getX() + " Y: " + p3.getY());
-        p4 = new Point(4, 1);
-        System.out.println("Rectangle BottomRight Point: X: " + p4.getX() + " Y: " + p4.getY());
+        super.addPoints(p1);
+        super.addPoints(p2);
+        super.addPoints(p3);
+        super.addPoints(p4);
+
+        System.out.println("Rectangle UpperLeft Point: X: " + super.getPointX(0) + " Y: " + super.getPointY(0));
+        System.out.println("Rectangle BottomLeft Point: X:" + super.getPointX(1) + " Y: " + super.getPointY(1));
+        System.out.println("Rectangle UpperRight Point: X: " + super.getPointX(2) + " Y: " + super.getPointY(2));
+        System.out.println("Rectangle BottomRight Point: X: " + super.getPointX(3) + " Y: " + super.getPointY(3));
     }
 
     public Rectangle(Point p1, Point p2, Point p3, Point p4) {
-        System.out.println("Rectangle Point: X: " + p1.getX() + ", " + p2.getX() + ", " + p3.getX() + ", " + p4.getX());
-        System.out.println("Rectangle Point: Y: " + p1.getY() + ", " + p2.getY() + ", " + p3.getY() + ", " + p4.getY());
+        System.out.println("Rectangle Point: X: " + super.getPointX(0) + ", " + super.getPointX(1) + ", " + super.getPointX(2) + ", " + super.getPointX(3));
+        System.out.println("Rectangle Point: Y: " + super.getPointY(0) + ", " + super.getPointY(1) + ", " + super.getPointY(2) + ", " + super.getPointY(3));
     }
 }

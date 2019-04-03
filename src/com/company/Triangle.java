@@ -2,16 +2,19 @@ package com.company;
 
 public class Triangle extends Shape {
     public Triangle() {
-        p1 = new Point(1,1);
-        System.out.println("Triangle Rightmost Point: X: " + p1.getX() + " Y: " + p1.getY());
-        p2 = new Point(4,1);
-        System.out.println("Triangle LeftMost Point: X: " + p2.getX() + " Y: " + p2.getY());
-        p3 = new Point(2,6);
-        System.out.println("Triangle Top Point: X: " + p3.getX() + " Y: " + p3.getY());
-    }
+        super.addPoints(po1);
+        super.addPoints(po2);
+        super.addPoints(po3);
 
-    public Triangle(Point p1, Point p2, Point p3) {
-        System.out.println("Triangle Point: X: " + p1.getX() + ", " + p2.getX() + ", " + p3.getX());
-        System.out.println("Triangle Point: Y: " + p1.getY() + ", " + p2.getY() + ", " + p3.getY());
+        System.out.println("Triangle Rightmost Point: X: " + super.getPointX(0) + " Y: " + super.getPointY(0));
+        System.out.println("Triangle LeftMost Point: X: " + super.getPointX(1) + " Y: " + super.getPointY(1));
+        System.out.println("Triangle Top Point: X: " + super.getPointX(2) + " Y: " + super.getPointY(2));
     }
+/*
+    public Triangle(Point po1, Point po2, Point po3) {
+        super(po1, po2, po3);
+        System.out.println("Triangle Point: X: " + super.getPointX(0) + ", " + super.getPointX(1) + ", " + super.getPointX(2));
+        //System.out.println("Triangle Point: Y: " + super.getPointY(0) + ", " + super.getPointY(1) + ", " + super.getPointY(2));
+    }
+    */
 }

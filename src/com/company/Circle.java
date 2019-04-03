@@ -3,17 +3,21 @@ package com.company;
 public class Circle extends Shape {
     int radius;
 
+    public int getRadius(){return radius;}
+    public void setRadius(int _radius){this.radius = _radius;}
+
     public Circle() {
-        p1 = new Point(1, 4);
-        radius = 5;
-        System.out.println("Circle Point: X :" + p1.getX() + " Y :" + p1.getY());
-        System.out.println("Circle Radius: " + radius);
+        super.addPoints(p1);
+        setRadius(5);
+
+        System.out.println("Circle Point: X : " + super.getPointX(0) + " Y : " + super.getPointY(0));
+        System.out.println("Circle Radius: " + getRadius());
     }
 
-    public Circle(Point p1) {
-        radius = 5;
-        System.out.println("Circle Point: X: " + p1.getX());
-        System.out.println("Circle Point: Y: " + p1.getY());
+    public Circle(Point p1, int radius) {
+        super(p1);
+        System.out.println("\nCircle Point: X: " + super.getPointX(0));
+        System.out.println("Circle Point: Y: " + super.getPointY(0));
         System.out.println("Circle Radius: " + radius);
     }
 }
