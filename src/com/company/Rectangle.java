@@ -12,7 +12,7 @@ public class Rectangle extends Shape {
         System.out.println("Rectangle UpperRight Point: X: " + super.getPointX(2) + ", Y: " + super.getPointY(2));
         System.out.println("Rectangle BottomRight Point: X: " + super.getPointX(3) + ", Y: " + super.getPointY(3));
     }
-
+//
     public Rectangle(Point p1, Point p2, Point p3, Point p4) {
         super.addPoints(p1);
         super.addPoints(p2);
