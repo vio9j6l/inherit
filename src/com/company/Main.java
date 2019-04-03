@@ -13,11 +13,11 @@ public class Main {
         Point p4 = new Point(4, 1);
 
         System.out.println("Circle");
-	    Circle c1 = new Circle();
-	    Circle c2 = new Circle(p1,5);
+	Circle c1 = new Circle();
+	Circle c2 = new Circle(p1,5);
 
         System.out.println("\nTriangle");
-	    Triangle t1 = new Triangle();
+	Triangle t1 = new Triangle();
         Triangle t2 = new Triangle(po1, po2, po3);
 
         System.out.println("\nRectangle");
